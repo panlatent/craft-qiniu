@@ -1,8 +1,5 @@
 Craft Qiniu
 ===========
-Qiniu Cloud Storage plugin for Craft CMS 3. The plugin provide a `Qiniu Volume` can save files 
-in the [Qiniu Cloud](https://www.qiniu.com/).
-
 [![Build Status](https://travis-ci.org/panlatent/craft-qiniu.svg)](https://travis-ci.org/panlatent/craft-qiniu)
 [![Coverage Status](https://coveralls.io/repos/github/panlatent/craft-qiniu/badge.svg?branch=master)](https://coveralls.io/github/panlatent/craft-qiniu?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/panlatent/craft-qiniu/v/stable.svg)](https://packagist.org/packages/panlatent/craft-qiniu)
@@ -14,10 +11,14 @@ in the [Qiniu Cloud](https://www.qiniu.com/).
 
 ![Screenshot](resources/img/qiniu.png)
 
+Qiniu Cloud Storage plugin for Craft CMS 3. 
+
+The plugin provide a `Qiniu Volume` can save files in the [Qiniu Cloud](https://www.qiniu.com/).
+
 Requirements
 ------------
 
-This plugin requires Craft CMS 3.0.0 or later.
+This plugin requires Craft CMS 3.0 or later.
 
 Installation
 ------------

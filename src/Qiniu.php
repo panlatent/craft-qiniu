@@ -1,15 +1,12 @@
 <?php
 /**
- * Qiniu plugin for Craft CMS 3
- *
- * Qiniu clould storage plugin for Craft CMS 3
+ * Qiniu plugin for Craft 3
  *
  * @link      https://panlatent.com/
  * @copyright Copyright (c) 2018 panlatent@gmail.com
  */
 
 namespace panlatent\craft\qiniu;
-
 
 use Craft;
 use craft\base\Plugin;
