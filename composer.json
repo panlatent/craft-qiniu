@@ -1,0 +1,41 @@
+{
+    "name": "panlatent/craft-qiniu",
+    "description": "Qiniu Cloud Storage plugin for Craft CMS 3",
+    "type": "craft-plugin",
+    "version": "0.1.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "qiniu"
+    ],
+    "support": {
+        "docs": "https://github.com/panlatent/craft-qiniu/blob/master/README.md",
+        "issues": "https://github.com/panlatent/craft-qiniu/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "panlatent@gmail.com",
+            "homepage": "https://panlatent.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+        "qiniu/php-sdk": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+          "panlatent\\craft\\qiniu\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Qiniu",
+        "handle": "qiniu",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/panlatent/craft-qiniu/master/CHANGELOG.md",
+        "class": "panlatent\\craft\\qiniu\\Qiniu"
+    }
+}

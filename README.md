@@ -1,2 +1,36 @@
-# craft-qiniu
-Qiniu Clould plugin for Craft CMS 3.x
+Craft Qiniu
+===========
+Qiniu Cloud Storage plugin for Craft CMS 3. The plugin provide a `Qiniu Volume` 
+can save files in the [Qiniu Cloud](https://www.qiniu.com/)
+
+![Screenshot](resources/img/qiniu.png)
+
+Requirements
+------------
+
+This plugin requires Craft CMS 3.0.0-beta.23 or later.
+
+Installation
+------------
+
+To install the plugin, follow these instructions.
+
+1. Open your terminal and go to your Craft project:
+
+        cd /path/to/project
+
+2. Then tell Composer to load the plugin:
+
+        composer require panlatent/craft-qiniu
+
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Qiniu.
+
+Configuration
+-------------
+
+1. New a volume and set volume type: `Qiniu Volume`
+
+2. Set `Access Key` and `Secret Key` [See Values on Qiniu](https://portal.qiniu.com/user/key)
+
+3. Set `bucket` and the volume's `public URLs`, the value is URL from `bucket` bound URLs.
+
