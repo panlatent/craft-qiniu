@@ -1,14 +1,23 @@
 Craft Qiniu
 ===========
-Qiniu Cloud Storage plugin for Craft CMS 3. The plugin provide a `Qiniu Volume` 
-can save files in the [Qiniu Cloud](https://www.qiniu.com/)
+Qiniu Cloud Storage plugin for Craft CMS 3. The plugin provide a `Qiniu Volume` can save files 
+in the [Qiniu Cloud](https://www.qiniu.com/).
+
+[![Build Status](https://travis-ci.org/panlatent/craft-qiniu.svg)](https://travis-ci.org/panlatent/craft-qiniu)
+[![Coverage Status](https://coveralls.io/repos/github/panlatent/craft-qiniu/badge.svg?branch=master)](https://coveralls.io/github/panlatent/craft-qiniu?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/panlatent/craft-qiniu/v/stable.svg)](https://packagist.org/packages/panlatent/craft-qiniu)
+[![Total Downloads](https://poser.pugx.org/panlatent/craft-qiniu/downloads.svg)](https://packagist.org/packages/panlatent/craft-qiniu) 
+[![Latest Unstable Version](https://poser.pugx.org/panlatent/craft-qiniu/v/unstable.svg)](https://packagist.org/packages/panlatent/craft-qiniu)
+[![License](https://poser.pugx.org/panlatent/craft-qiniu/license.svg)](https://packagist.org/packages/panlatent/craft-qiniu)
+[![Craft CMS](https://img.shields.io/badge/Powered_by-Craft_CMS-orange.svg?style=flat)](https://craftcms.com/)
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://www.yiiframework.com/)
 
 ![Screenshot](resources/img/qiniu.png)
 
 Requirements
 ------------
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires Craft CMS 3.0.0 or later.
 
 Installation
 ------------
