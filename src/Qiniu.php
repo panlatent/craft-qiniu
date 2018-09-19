@@ -6,14 +6,14 @@
  * @copyright Copyright (c) 2018 panlatent@gmail.com
  */
 
-namespace panlatent\craft\qiniu;
+namespace gocraft\qiniu;
 
 use Craft;
 use craft\base\Plugin;
 use craft\events\RegisterComponentTypesEvent;
 use craft\i18n\PhpMessageSource;
 use craft\services\Volumes;
-use panlatent\craft\qiniu\volumes\QiniuVolume;
+use gocraft\qiniu\volumes\QiniuVolume;
 use yii\base\Event;
 
 /**
@@ -73,11 +73,11 @@ class Qiniu extends Plugin
         parent::init();
         self::$plugin = $this;
 
-        Craft::setAlias('@qiniu', $this->getBasePath());
+        Craft::setAlias('@gocraft/qiniu', $this->getBasePath());
 
         Craft::$app->i18n->translations['qiniu'] = [
             'class' => PhpMessageSource::class,
-            'basePath' => '@qiniu/translations',
+            'basePath' => '@@gocraft/qiniu/translations',
         ];
 
         // Register volume types

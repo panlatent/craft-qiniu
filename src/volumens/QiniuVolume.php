@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 2018 panlatent@gmail.com
  */
 
-namespace panlatent\craft\qiniu\volumes;
+namespace gocraft\qiniu\volumes;
 
 use Craft;
 use craft\base\Volume;
@@ -19,7 +19,7 @@ use yii\helpers\StringHelper;
 /**
  * Class QiniuVolume
  *
- * @package panlatent\craft\qiniu\volumes
+ * @package gocraft\qiniu\volumes
  * @author Panlatent <panlatent@gmail.com>
  */
 class QiniuVolume extends Volume

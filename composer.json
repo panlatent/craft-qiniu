@@ -1,5 +1,5 @@
 {
-    "name": "panlatent/craft-qiniu",
+    "name": "gocraft/qiniu",
     "description": "Qiniu Cloud Storage plugin for Craft 3",
     "type": "craft-plugin",
     "version": "0.1.0",
@@ -11,8 +11,8 @@
         "qiniu"
     ],
     "support": {
-        "docs": "https://github.com/panlatent/craft-qiniu/blob/master/README.md",
-        "issues": "https://github.com/panlatent/craft-qiniu/issues"
+        "docs": "https://github.com/gocraftcms/qiniu/blob/master/README.md",
+        "issues": "https://github.com/gocraftcms/qiniu/issues"
     },
     "license": "MIT",
     "authors": [
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-          "panlatent\\craft\\qiniu\\": "src/"
+          "gocraft\\qiniu\\": "src/"
         }
     },
     "extra": {
@@ -35,7 +35,7 @@
         "handle": "qiniu",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/panlatent/craft-qiniu/master/CHANGELOG.md",
-        "class": "panlatent\\craft\\qiniu\\Qiniu"
+        "changelogUrl": "https://raw.githubusercontent.com/gocraftcms/qiniu/master/CHANGELOG.md",
+        "class": "gocraft\\qiniu\\Qiniu"
     }
 }
