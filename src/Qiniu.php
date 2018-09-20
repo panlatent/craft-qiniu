@@ -77,7 +77,7 @@ class Qiniu extends Plugin
 
         Craft::$app->i18n->translations['qiniu'] = [
             'class' => PhpMessageSource::class,
-            'basePath' => '@@gocraft/qiniu/translations',
+            'basePath' => '@gocraft/qiniu/translations',
         ];
 
         // Register volume types
