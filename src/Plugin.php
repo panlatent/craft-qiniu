@@ -10,7 +10,6 @@ namespace panlatent\craft\qiniu;
 
 use Craft;
 use craft\events\RegisterComponentTypesEvent;
-use craft\i18n\PhpMessageSource;
 use craft\services\Volumes;
 use panlatent\craft\qiniu\volumes\QiniuVolume;
 use yii\base\Event;
@@ -45,6 +44,11 @@ class Plugin extends \craft\base\Plugin
      */
     public $schemaVersion = '0.1.0';
 
+    /**
+     * @var string
+     */
+    public $t9nCategory = 'qiniu';
+
     // Public Methods
     // =========================================================================
 
@@ -65,11 +69,6 @@ class Plugin extends \craft\base\Plugin
         self::$plugin = $this;
 
         Craft::setAlias('@qiniu', $this->getBasePath());
-
-        Craft::$app->i18n->translations['qiniu'] = [
-            'class' => PhpMessageSource::class,
-            'basePath' => '@qiniu/translations',
-        ];
 
         // Register volume types
         Event::on(Volumes::class, Volumes::EVENT_REGISTER_VOLUME_TYPES, function (RegisterComponentTypesEvent $e) {
