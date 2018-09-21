@@ -6,14 +6,14 @@
  * @copyright Copyright (c) 2018 panlatent@gmail.com
  */
 
-namespace gocraft\qiniu;
+namespace panlatent\craft\qiniu;
 
 use Craft;
 use craft\base\Plugin;
 use craft\events\RegisterComponentTypesEvent;
 use craft\i18n\PhpMessageSource;
 use craft\services\Volumes;
-use gocraft\qiniu\volumes\QiniuVolume;
+use panlatent\craft\qiniu\volumes\QiniuVolume;
 use yii\base\Event;
 
 /**
