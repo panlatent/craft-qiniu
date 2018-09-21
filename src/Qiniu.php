@@ -73,11 +73,11 @@ class Qiniu extends Plugin
         parent::init();
         self::$plugin = $this;
 
-        Craft::setAlias('@gocraft/qiniu', $this->getBasePath());
+        Craft::setAlias('@qiniu', $this->getBasePath());
 
         Craft::$app->i18n->translations['qiniu'] = [
             'class' => PhpMessageSource::class,
-            'basePath' => '@gocraft/qiniu/translations',
+            'basePath' => '@qiniu/translations',
         ];
 
         // Register volume types
