@@ -36,6 +36,6 @@
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/panlatent/craft-qiniu/master/CHANGELOG.md",
-        "class": "panlatent\\craft\\qiniu\\Qiniu"
+        "class": "panlatent\\craft\\qiniu\\Plugin"
     }
 }
