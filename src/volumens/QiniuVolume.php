@@ -278,7 +278,7 @@ class QiniuVolume extends Volume
      */
     public function saveFileLocally(string $uriPath, string $targetPath): int
     {
-        $url = $this->getRootUrl() . $uriPath;
+        $url = $this->getRootUrl() . $this->_encodeUriPath($uriPath);
         if ($url[0] == '/') {
             $schema = $this->serverHttpsDownload ? 'https' : 'http';
             $url = $schema . '://' . ltrim($url, '/');
@@ -424,5 +424,18 @@ class QiniuVolume extends Volume
         }
 
         return $this->root . '/' . ltrim($path, '/');
+    }
+
+    /**
+     * @param string $uriPath
+     * @return string
+     */
+    private function _encodeUriPath(string $uriPath): string
+    {
+        $uri = array_map(function($value) {
+            return rawurlencode($value);
+        }, (array)explode('/', $uriPath));
+
+        return implode('/', $uri);
     }
 }
